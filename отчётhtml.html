@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лабораторная работа</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      color: #333;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    header, section {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .center {
+      text-align: center;
+    }
+    .info p {
+      margin: 5px 0;
+    }
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Отчёт по Лабораторной работе</h1>
+    <div class="info">
+      <p><strong>Колледж:</strong> Ithub</p>
+      <p><strong>Группа/подгруппа:</strong> 1ЭИТ1-9.24</p>
+      <p><strong>ФИО:</strong> Гарифуллин Ильсаф Рустемович</p>
+      <p><strong>Год:</strong> 2025</p>
+      <br>
+      <p><strong>Дисциплина:</strong> Основы компьютерных сетей</p>
+      <p><strong>КТ номер 1</strong></p>
+      <p><strong>Тема:</strong> Лабораторная работа в Cisco Packet Tracer</p>
+      <br>
+    </div>
+  </header>
+
+  <section>
+    <h2>Отчет по лабораторной работе №1</h2>
+
+    <h3>Топология</h3>
+    <p>Сначала, я поменял IP адресса, добавив в третьи октеты мой порядковый номер. Далее, поменял настройки в роутерах, и приступил к маршутизатору R1. Я его переименовал на свою фамилию, после начал работать с CLI. </p>
+
+    <h3>Команды, которые я использовал в CLI (1 интерфейс- fa0/0)</h3>
+    <p>1. garifullin>enable</p>
+    <p>2. garifullin#configure terminal</p>
+    <p>3. garifullin(config)#interface fa0/0</p>
+    <p>4. garifullin(config-if)#ip address 192.168.10.1 255.255.255.0</p>
+    <p>5. garifullin(config-if)#no shutdown</p>
+    <img src="image02.png" alt="CLI" width="600" style="display: block; margin: 20px auto;">
+    <h3> Далее, приступил к второму интерфейсу (fa0/1) </h3>
+    <p>6. garifullin(config-if)#exit</p>
+    <p>7. garifullin(config)#interface fa0/1</p>
+    <p>8. garifullin(config-if)#ip address 172.16.10.20 255.255.0.0</p>
+    <p>9. garifullin(config-if)#no shutdown</p>
+    <img src="image03.png" alt="CLI" width="600" style="display: block; margin: 20px auto;">
+
+    <h3>Итоги и выводы</h3>
+    <p>Всё заработало. Чтобы это проверить, я отправлял сообщения с ПК1 на маршутизатор, и все проходило успешно.</p>
+   <img src="image04.png" alt="CLI" width="600" style="display: block; margin: 20px auto;">
+    <p>Топология работает, всё получилось.</p>
+    <a href=https://disk.yandex.ru/d/AQt0qURjy1qrrA">Скачать ЛР (ЯндексДиск)</a>
+  </section>
+
+</body>
+</html>
